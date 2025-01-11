@@ -6,7 +6,7 @@ you have to execute the following commands in the  BASH command console:
 ```
 Database
 
-to execute the migrations and seeders you must modified the name of the file  .env.example to .env, then modified the password section with your password from workbench.
+to execute the migrations and seeders you must modify the name of the file  .env.example to .env, then modify the password section with your password from workbench.
 Also add a variable that define the secret key for the token.
 
 ```bash
