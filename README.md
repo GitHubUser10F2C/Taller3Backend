@@ -25,7 +25,7 @@ Finally in the bash console, execute the following commands:
 	sequelize db:seed:all
 ```
 
-Now you can run the project with following command in the bash console
+Now you can run the project with following command in the bash console:
 
 ```bash
 	npm run dev
