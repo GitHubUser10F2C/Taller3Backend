@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Habilita CORS para permitir solicitudes desde cualquier dominio
 app.use(cors({
-    origin: 'http://localhost:3000', // Origen permitido
+    origin: ['http://localhost:3000','https://catedra3frontend.firebaseapp.com','https://catedra3frontend.web.app/'], // Origen permitido
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'], // Métodos permitidos
     allowedHeaders: ['Content-Type', 'Authorization'], // Encabezados permitidos
     credentials: true
