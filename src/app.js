@@ -22,9 +22,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Habilita CORS para permitir solicitudes desde cualquier dominio
 app.use(cors({
-    origin: 'http://localhost:3000', // Especifica el origen exacto
-    methods: '*', // Los métodos permitidos
-    allowedHeaders: '*', // Las cabeceras permitidas
+    origin: 'http://localhost:3000', // Origen permitido
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'], // Métodos permitidos
+    allowedHeaders: ['Content-Type', 'Authorization'], // Encabezados permitidos
     credentials: true
 }));
 app.use(bodyParser.urlencoded({ extended: false }));
